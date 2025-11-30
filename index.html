@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mask Reveal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              surface: {
+                light: '#ffffff',
+                dark: '#0a0a0a',
+              },
+              content: {
+                primary: '#0a0a0a',
+                secondary: '#afa18f',
+                accent: '#ec4e39',
+              }
+            },
+            fontFamily: {
+              bebas: ['"Bebas Neue"', 'sans-serif'],
+              comic: ['"Comic Neue"', 'cursive'],
+              inter: ['"Inter"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="./importmap.js"></script>
+    <style>
+      body { margin: 0; padding: 0; background-color: #0a0a0a; color: #ffffff; overflow: hidden; }
+      /* Hide scrollbar for immersive feel */
+      ::-webkit-scrollbar { display: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>

@@ -1,11 +1,32 @@
-<div align="center">
+# Mask Reveal System
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Directory Structure
+```
+/
+├── components/
+│   ├── Core/       # Primitive components
+│   ├── Section/    # Compositional sections (MaskReveal)
+│   └── Page/       # Layouts (Home)
+├── utils/          # Hooks and logic (useMousePosition)
+├── App.tsx         # Main Component
+├── constants.ts    # Design Tokens & Config
+├── types.ts        # Type Definitions
+└── index.tsx       # Entry Point
+```
 
-  <h1>Built with AI Studio</h2>
+## ELI10 TLDR
+This app creates a "magic flashlight" effect. 
+- There are two layers of text stacked on top of each other.
+- The bottom layer is always there (grey text).
+- The top layer is orange but usually invisible.
+- We use a "mask" (like a stencil) that follows your mouse.
+- Where the mask is, you see the orange layer.
+- When you hover over the text, the mask gets bigger!
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Key Systems
+1. **Fluid Motion**: Uses Framer Motion `tween` with `backOut` ease for snappy cursor following.
+2. **Design Tokens**: Colors and Types are centralized in `constants.ts`.
+3. **Reactive**: Mouse position updates state -> triggers re-render of mask position.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Setup
+Built with React 18, TypeScript, Tailwind, and Framer Motion via ESM.
