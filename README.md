@@ -30,6 +30,3 @@ This app creates a "magic flashlight" effect.
 
 ## Setup
 Built with React 18, TypeScript, Tailwind, and Framer Motion via ESM.
-
-
-https://ai.studio/apps/drive/1cdyPwWduFWWMmXs-fw3BXaESs3CBihKt?fullscreenApplet=true
